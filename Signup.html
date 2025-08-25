@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Open Graph Meta Tags for Facebook -->
+    <meta
+      property="og:title"
+      content="Your Shoe Shop - Find Your Perfect Fit"
+    />
+    <meta
+      property="og:description"
+      content="Your go-to online shoe shop for trendy, sports, and fashion footwear. Shop the best collections now!"
+    />
+    <meta property="og:image" content="......" />
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Your Shoe Shop - Find Your Perfect Fit"
+    />
+    <meta
+      name="twitter:description"
+      content="Your go-to online shoe shop for trendy, sports, and fashion footwear. Shop the best collections now!"
+    />
+    <meta name="twitter:image" content="....." />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://lottie.host/e672457a-bc43-4782-9c4f-69d34759aeb2/N53PKYCpvR.lottie"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fontawesome.com/icons/categories/medical-health">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Apsara Angkor Sign-Up</title>
+  <style>
+    body {
+      font-family: 'Arial, Helvetica, sans-serif ';
+      background: #f0f2f5;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      color: #333;
+    }
+    .container {
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      flex-direction: row;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      max-width: 950px;
+      width: 90%;
+    }
+
+    /* Left Section */
+    .left {
+      flex: 1;
+      background: #f8d9c0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px;
+    }
+    .left img {
+      width: 220px;
+      margin-bottom: 10px;
+    }
+    .left h2 {
+      font-size: 22px;
+      color: #333;
+      margin-bottom: 5px;
+    }
+    .left p {
+      font-size: 14px;
+      color: #444;
+    }
+
+    /* Right Section */
+    .right {
+      flex: 1;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 10px;
+      position: relative;
+    }
+    .signup-box {
+      width: 100%;
+      max-width: 360px;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Back Arrow */
+    .back-arrow {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      font-size: 22px;
+      cursor: pointer;
+      color: #003366;
+      text-decoration: none;
+    }
+    .back-arrow:hover {
+      color: #007bff;
+    }
+
+    .signup-box img.logo {
+      width: 100px;
+      margin-bottom: -30px;
+    }
+    .signup-box h2 {
+      color: #003366;
+      margin-bottom: -10px;
+      font-size: 20px;
+      font-weight: bold; 
+      margin: 20px 10px;
+    }
+    .signup-box p {
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    /* Input group */
+    .form-row {
+      display: flex;
+      gap: 8px;
+    }
+    .input-group {
+      position: relative;
+      flex: 1;
+      text-align: left;
+      margin-bottom: 8px;
+    }
+    .input-group input {
+      width: 100%;
+      height: 40px;
+      padding: 0 40px 0 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+    .input-group .toggle-password {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      font-size: 16px;
+      color: #666;
+      line-height: 1;
+    }
+
+    /* Button */
+    button {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(to right, #0044cc, #007bff);
+      border: none;
+      border-radius: 6px;
+      color: #fff;
+      font-size: 15px;
+      cursor: pointer;
+      margin: 5px 0;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+
+    /* Separator */
+    .separator {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #888;
+      font-size: 13px;
+      margin: 10px 0;
+    }
+    .separator::before,
+    .separator::after {
+      content: "";
+      flex: 1;
+      border-bottom: 1px solid #ccc;
+    }
+    .separator:not(:empty)::before {
+      margin-right: 0.75em;
+    }
+    .separator:not(:empty)::after {
+      margin-left: 0.75em;
+    }
+
+    /* Google button */
+    .google-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    .google-btn img {
+      width: 18px;
+      margin-right: 5px;
+    }
+
+    /* Sign in link */
+    .signin {
+      font-size: 13px;
+    }
+    .signin a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    /* Error message */
+    .error {
+      color: red;
+      font-size: 14px;
+      margin-top: 5px;
+      display: none;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Left Section -->
+    <div class="left">
+      <img src="image/shopping_bags.png" alt="Shopping Bags">
+      <h2>Welcome to Apsara Angkor</h2>
+      <p>Sign up now to order!</p>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right">
+      <div class="signup-box">
+        <a href="login.html" class="back-arrow">←</a>
+        <img src="image/logo.png" alt="Apsara Angkor Logo" class="logo">
+        <h2>Sign-Up</h2>
+        <p>Sign up and start shopping today with Apsara Angkor!</p>
+
+        <form id="signupForm">
+          <div class="form-row">
+            <div class="input-group">
+              <input type="text" id="firstName" placeholder="First name" required>
+            </div>
+            <div class="input-group">
+              <input type="text" id="lastName" placeholder="Last name" required>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <input type="text" id="username" placeholder="Username" required>
+          </div>
+
+          <div class="input-group">
+            <input type="email" id="email" placeholder="Email" required>
+          </div>
+
+          <div class="input-group">
+            <input type="password" id="password" placeholder="Password" required>
+            <span class="toggle-password" data-target="password">👁️</span>
+          </div>
+
+          <div class="input-group">
+            <input type="password" id="confirm" placeholder="Confirm password" required>
+            <span class="toggle-password" data-target="confirm">👁️</span>
+          </div>
+
+          <p id="errorMsg" class="error">Passwords do not match!</p>
+
+          <button type="submit">Sign Up</button>
+        </form>
+
+        <div class="separator">Or</div>
+
+        <div class="google-btn">
+          <img src="image/google_icon1.png" alt="Google Logo">
+          Sign up with Google
+        </div>
+
+        <div class="signin">
+          Already have an account? <a href="login.html">Sign in</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Toggle Password Visibility
+    document.querySelectorAll(".toggle-password").forEach(icon => {
+      icon.addEventListener("click", () => {
+        const targetId = icon.getAttribute("data-target");
+        const input = document.getElementById(targetId);
+        const type = input.type === "password" ? "text" : "password";
+        input.type = type;
+        icon.textContent = type === "password" ? "👁️" : "🙈";
+      });
+    });
+
+    // Handle form submit
+    const form = document.getElementById('signupForm');
+    const errorMsg = document.getElementById('errorMsg');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const password = document.getElementById('password').value.trim();
+      const confirm = document.getElementById('confirm').value.trim();
+
+      if (password !== confirm) {
+        errorMsg.style.display = 'block';
+      } else {
+        errorMsg.style.display = 'none';
+        // Redirect to homepage
+        window.location.href = 'index.html';
+      }
+    });
+  </script>
+</body>
+</html>
